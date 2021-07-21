@@ -1,8 +1,9 @@
 .header {
    color: #ffffff;
+   position: relative;
 
    &__background {
-      background-image: url(../img/background-top-info.jpg);
+      background-image: url(../img/header_bg.png);
       height: 1290px;
       background-repeat: no-repeat;
       background-size: cover;

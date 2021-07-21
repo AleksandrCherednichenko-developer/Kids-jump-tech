@@ -8,6 +8,8 @@
 
 body{
    font: 400 20px/155% Dosis;
+   background-color: #FBFDFF;
+   color: #222A3F;
 }
 
 a{
@@ -23,6 +25,7 @@ a{
 
 .title{
    font: 500 120px/100% LifehackSans;
+   text-transform: uppercase;
 }
 
 .subtitle{
@@ -30,3 +33,7 @@ a{
 }
 
 @import "_header";
+
+@import "_advantages";
+
+@import "_games";
