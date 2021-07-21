@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Lifehack';
-  src: url(../fonts/Lifehack-Bold.woff2), url(../fonts/Lifehack-Bold.woff);
+  font-family: 'LifehackzSans';
+  src: url(../fonts/LifehackSans-Bold.woff2), url(../fonts/LifehackSans-Bold.woff);
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Lifehack';
-  src: url(../fonts/Lifehack-Medium.woff2), url(../fonts/Lifehack-Medium.woff);
+  font-family: 'LifehackSans';
+  src: url(../fonts/LifehackSans-Medium.woff2), url(../fonts/LifehackSans-Medium.woff);
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -36,4 +36,152 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: 400 20px/155% Dosis;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font: 500 120px/100% LifehackSans;
+}
+
+.subtitle {
+  font: 400 20px/155% Dosis;
+}
+
+.header {
+  color: #ffffff;
+}
+
+.header__background {
+  background-image: url(../img/background-top-info.jpg);
+  height: 1290px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: 600 16px/120% Dosis;
+  position: relative;
+  z-index: 1;
+}
+
+.header__top::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/logo-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 728.89px;
+  height: 653px;
+  left: -185.89px;
+  top: -390px;
+  z-index: -1;
+}
+
+.header__logo {
+  position: absolute;
+  left: 241px;
+  top: 19px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 49px auto 215px;
+}
+
+.header__link + .header__link {
+  margin-left: 104px;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__burger img {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  margin-right: 16px;
+}
+
+.header__info .child {
+  position: absolute;
+  top: 177px;
+  left: 1051px;
+}
+
+.header__title {
+  width: 560px;
+  margin-bottom: 40px;
+}
+
+.header__subtitle {
+  width: 600px;
+  line-height: 140%;
+  margin-bottom: 100px;
+}
+
+.header__button {
+  background: linear-gradient(92.57deg, #2F8FFF 0%, #2F73F6 100%);
+  -webkit-box-shadow: 0px 10px 36px rgba(47, 230, 255, 0.2);
+          box-shadow: 0px 10px 36px rgba(47, 230, 255, 0.2);
+  border-radius: 40px;
+  padding: 24px 9px 24px 52px;
+}
+
+.header__button img {
+  margin-left: 32px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.header__figure img:nth-child(1) {
+  position: absolute;
+  left: 306px;
+  top: 227px;
+}
+
+.header__figure img:nth-child(2) {
+  position: absolute;
+  left: 1758px;
+  top: 194px;
+}
+
+.header__figure img:nth-child(3) {
+  position: absolute;
+  left: 505px;
+  top: 1014px;
+}
+
+.header__figure img:nth-child(4) {
+  position: absolute;
+  left: 1660.28px;
+  top: 768px;
 }

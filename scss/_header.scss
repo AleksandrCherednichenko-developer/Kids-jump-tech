@@ -1,0 +1,111 @@
+.header {
+   color: #ffffff;
+
+   &__background {
+      background-image: url(../img/background-top-info.jpg);
+      height: 1290px;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   &__top {
+      display: flex;
+      justify-content: center;
+      font: 600 16px/120% Dosis;
+      position: relative;
+      z-index: 1;
+      &::before{
+         content: "";
+         position: absolute;
+         background-image: url(../img/logo-bg.svg);
+         background-size: cover;
+         background-repeat: no-repeat;
+         width: 728.89px;
+         height: 653px;
+         left: -185.89px;
+         top: -390px;
+         z-index: -1;
+      }
+   }
+
+   &__logo{
+      position: absolute;
+      left: 241px;
+      top: 19px;
+   }
+
+   &__menu {
+   }
+
+   &__list {
+      display: flex;
+      margin: 49px auto 215px;
+   }
+
+   &__link {
+      + .header__link {
+         margin-left: 104px;
+      }
+   }
+
+   &__burger {
+      display: none;
+      img{
+         transform: translateY(-1px);
+         margin-right: 16px;
+      }
+   }
+
+   &__info {
+      .child {
+         position: absolute;
+         top: 177px;
+         left: 1051px;
+      }
+   }
+
+   &__title {
+      width: 560px;
+      margin-bottom: 40px;
+   }
+
+   &__subtitle {
+      width: 600px;
+      line-height: 140%;
+      margin-bottom: 100px;
+   }
+
+   &__button {
+      background: linear-gradient(92.57deg, #2F8FFF 0%, #2F73F6 100%);
+      box-shadow: 0px 10px 36px rgba(47, 230, 255, 0.2);
+      border-radius: 40px;
+      padding: 24px 9px 24px 52px;
+      img{
+         margin-left: 32px;
+         transform: translateY(20px);
+      }
+   }
+
+   &__figure {
+      img:nth-child(1){
+         position: absolute;
+         left: 306px;
+         top: 227px;
+      }
+      img:nth-child(2){
+         position: absolute;
+         left: 1758px;
+         top: 194px;
+      }
+      img:nth-child(3){
+         position: absolute;
+         left: 505px;
+         top: 1014px;
+      }
+      img:nth-child(4){
+         position: absolute;
+         left: 1660.28px;
+         top: 768px;
+      }
+   }
+}
