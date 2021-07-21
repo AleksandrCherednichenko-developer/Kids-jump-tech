@@ -94,7 +94,7 @@ a {
 .header__top::before {
   content: "";
   position: absolute;
-  background-image: url(../img/logo-bg.svg);
+  background-image: url(../img/header_logo-bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 728.89px;
@@ -160,6 +160,31 @@ a {
   margin-left: 32px;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
+}
+
+.header__social {
+  position: absolute;
+  left: 240px;
+  top: 787px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.header__social a {
+  opacity: 0.7;
+}
+
+.header__social a:hover {
+  opacity: 1;
+}
+
+.header__social a + a {
+  margin-top: 30px;
 }
 
 .header__figure img:nth-child(1) {
