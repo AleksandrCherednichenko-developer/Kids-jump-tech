@@ -68,17 +68,19 @@ a {
 }
 
 .subtitle {
-  font: 400 20px/155% Dosis;
+  font: 400 24px/155% Dosis;
 }
 
 .header {
   color: #ffffff;
   position: relative;
+  overflow: hidden;
 }
 
 .header__background {
   background-image: url(../img/header_bg.png);
   height: 1290px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -147,8 +149,9 @@ a {
 }
 
 .header__subtitle {
-  width: 600px;
+  font-size: 24px;
   line-height: 140%;
+  width: 600px;
   margin-bottom: 100px;
 }
 

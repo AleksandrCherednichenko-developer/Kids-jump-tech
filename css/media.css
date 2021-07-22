@@ -1,4 +1,7 @@
 @media (max-width: 1440px) {
+   .header__background{
+      height: 1035px;
+   }
    .header__top::before{
       width: 580px;
       height: 520px;
@@ -16,18 +19,8 @@
    .header__list {
       margin-bottom: 190px;
    }
-   .header__social{
-      left: 69px;
-      top: 660px;
-   }
    .header__info{
       margin-left: 149px;
-   }
-   .header__info .child{
-      width: 541px;
-      height: 659px;
-      left: 775px;
-      top: 177px;
    }
    .header__title {
       font-size: 100px;
@@ -35,8 +28,19 @@
       margin-bottom: 40px;
    }
    .header__subtitle {
+      font-size: 22px;
       width: 540px;
       margin-bottom: 63px;
+   }
+   .header__social{
+      left: 69px;
+      top: 660px;
+   }
+   .header__info .child{
+      width: 541px;
+      height: 659px;
+      left: 775px;
+      top: 177px;
    }
    .header__figure img:nth-child(1){
       width: 79.61px;
@@ -61,5 +65,84 @@
       height: 96.11px;
       left: 1323.82px;
       top: 548px;
+   }
+}
+
+@media (max-width: 768px) {
+   .header__background{
+      height: 879px;;
+   }
+   .header__top{
+      justify-content: flex-end;
+      margin-right: 40px;
+   }
+   .header__top::before{
+      height: 290px;
+      width: 325px;
+      left: -150px;
+      top: -150px;
+   }
+   .header__logo{
+      left: 40px;
+   }
+   .header__logo img{
+      width: 64px;
+      height: 64px;
+   }
+   .header__list {
+      margin: 38px auto 129px;
+      font-size: 13px;
+   }
+   .header__link + .header__link{
+      margin-left: 40px;
+   }
+   .header__info{
+      margin-left: 25px;
+   }
+   .header__title {
+      font-size: 80px;
+      line-height: 80px;
+      width: 395px;
+   }
+   .header__subtitle {
+      font-size: 20px;
+      width: 335px;
+      margin-bottom: 60px;
+   }
+   .header__social{
+      display: inline;
+      left: 80px;
+      top: 743px;
+   }
+   .header__social a + a{
+      margin-top: 0;
+      margin-left: 30px;
+   }
+   .header__info .child{
+      height: 415px;
+      width: 341px;
+      left: 405px;
+      top: 290px;
+   }
+   .header__figure img:nth-child(1){
+      width: 67px;
+      height: 66px;
+      left: 394px;
+      top: 134px;
+   }
+   .header__figure img:nth-child(2){
+      width: 55px;
+      height: 53px;
+      left: 708px;
+      top: 285px;
+   }
+   .header__figure img:nth-child(3){
+      display: none;
+   }
+   .header__figure img:nth-child(4){
+      width: 65px;
+      height: 63px;
+      left: 727px;
+      top: 568px;
    }
 }
