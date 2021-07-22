@@ -1,4 +1,4 @@
-$('.games__items').slick({
+$('.slider__items').slick({
 
    slidesToShow: 1,
    slidesToScroll: 4,
@@ -7,5 +7,4 @@ $('.games__items').slick({
    variableWidth: true,
    centerMode: true,
    focusOnSelect: true,
-  //  zIndex: 10,
  });
