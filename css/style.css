@@ -83,6 +83,7 @@ a {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .header__top {
@@ -127,11 +128,12 @@ a {
   margin-left: 104px;
 }
 
-.header__burger {
+.header__burger-btn {
+  font-size: 16px;
   display: none;
 }
 
-.header__burger img {
+.header__burger-btn img {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
   margin-right: 16px;
@@ -216,6 +218,100 @@ a {
   position: absolute;
   left: 1660.28px;
   top: 768px;
+}
+
+.header {
+  z-index: 100;
+}
+
+.header__burger {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  top: -100%;
+  overflow: auto;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  background: linear-gradient(257.63deg, #342183 2.35%, #8228DC 98.49%);
+}
+
+.header__burger.active {
+  top: 0%;
+}
+
+.header__burger-logo img {
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  left: 16px;
+  top: 9px;
+}
+
+.header__burger-logo::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/header_logo-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190px;
+  width: 225px;
+  left: -100px;
+  top: -100px;
+  z-index: -1;
+}
+
+.header__burger-list {
+  position: absolute;
+  text-align: center;
+  top: 162px;
+  left: 151px;
+}
+
+.header__burger-link + .header__burger-link {
+  margin-top: 40px;
+}
+
+.header__burger-menu-btn {
+  position: absolute;
+  top: 28px;
+  left: 137px;
+  font: 600 16px/120% Dosis;
+}
+
+.header__burger-menu-btn img {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  margin-right: 16px;
+}
+
+.header__burger-close-btn {
+  position: absolute;
+  top: 304px;
+  left: 333px;
+}
+
+.header__burger-social {
+  position: absolute;
+  left: 114px;
+  top: 599px;
+}
+
+.header__burger-social a {
+  opacity: 0.7;
+}
+
+.header__burger-social a:hover {
+  opacity: 1;
+}
+
+.header__burger-social a img {
+  width: 28px;
+  height: 28px;
+}
+
+.header__burger-social a + a {
+  margin-left: 32px;
 }
 
 .advantages {

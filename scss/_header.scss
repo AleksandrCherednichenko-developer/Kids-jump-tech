@@ -9,6 +9,7 @@
       width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center ;
    }
 
    &__top {
@@ -43,12 +44,13 @@
    }
 
    &__link {
-      + .header__link {
+      & + .header__link {
          margin-left: 104px;
       }
    }
 
-   &__burger {
+   &__burger-btn {
+      font-size: 16px;
       display: none;
       img{
          transform: translateY(-1px);
@@ -102,7 +104,6 @@
       a + a {
          margin-top: 30px;
       }
-      
    }
 
    &__figure {
