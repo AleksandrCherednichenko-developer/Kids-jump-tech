@@ -327,10 +327,13 @@ a {
   display: flex;
 }
 
+<<<<<<< Updated upstream
 .advantages__info {
   margin-right: 77px;
 }
 
+=======
+>>>>>>> Stashed changes
 .advantages__title {
   color: #2A2FA3;
   padding: 160px 0 40px;

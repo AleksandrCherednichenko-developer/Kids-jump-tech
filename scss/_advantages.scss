@@ -2,6 +2,7 @@
    position: relative;
    z-index: 5;
 
+<<<<<<< Updated upstream
    &__inner{
       display: flex;
    }
@@ -10,6 +11,12 @@
       margin-right: 77px;
    }
 
+=======
+   &__inner {
+      display: flex;
+   }
+
+>>>>>>> Stashed changes
    &__title {
       color: #2A2FA3;
       padding: 160px 0 40px;
@@ -24,6 +31,7 @@
       }
    }
 
+<<<<<<< Updated upstream
    &__items-info{
       display: none;
    }
@@ -32,6 +40,10 @@
       position: relative;
    }
    &__item{
+=======
+
+   &__item {
+>>>>>>> Stashed changes
       width: 286px;
       height: 286px;
       background: #FFFFFF;
