@@ -1,5 +1,6 @@
 .header {
    z-index: 100;
+   overflow: auto;
 
    &__burger {
       position: fixed;
