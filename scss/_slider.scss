@@ -1,5 +1,8 @@
 .slider {
 
+   .slick-track {
+      left: -400px;
+   }
    &__items {
       display: flex;
       height: 665px;
