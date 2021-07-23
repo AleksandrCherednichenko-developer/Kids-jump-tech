@@ -3,18 +3,15 @@
    position: relative;
 
    &__bg {
-      position: relative;
-      &::before{
-         content: "";
-         position: absolute;
-         background-image: url(../img/games_bg.png);
-         background-repeat: no-repeat;
-         background-size: cover;
-         height: 1700px;
-         width: 100%;
-         z-index: -1;
-         top: -500px;
-      }
+      position: absolute;
+      top: -500px;
+      z-index: -2;
+      background-image: url(../img/games_bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 1700px;
+      width: 100%;
    }
 
    &__title {
